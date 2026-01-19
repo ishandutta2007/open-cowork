@@ -1,23 +1,20 @@
 import os
-import sys
+import argparse
 from interpreter import interpreter
 
-# Configure interpreter to use open-source model
-interpreter.llm.model = "ollama/llama3"  # Change to your preferred model
-interpreter.auto_run = False  # Set to True for auto-execution, but be careful
-interpreter.offline = True
+def main():
+    parser = argparse.ArgumentParser(description="Open Cowork CLI")
+    parser.add_argument("folder", help="Path to workspace folder")
+    args = parser.parse_args()
+    if not os.path.isdir(args.folder):
+        print("Invalid folder path.")
+        return
+    os.chdir(args.folder)
+    interpreter.llm.model = "ollama/llama3"
+    interpreter.auto_run = False  # Require user confirmation for runs
+    interpreter.safe_mode = "ask"  # Or "auto" but ask for safety
+    print("Starting Open Cowork chat. Type 'exit' to quit.")
+    interpreter.chat()
 
-if len(sys.argv) > 1:
-    folder = sys.argv[1]
-    if os.path.isdir(folder):
-        os.chdir(folder)
-        print(f"Changed working directory to {folder}")
-    else:
-        print(f"Invalid folder: {folder}")
-        sys.exit(1)
-else:
-    print("Please provide a folder path as argument.")
-    sys.exit(1)
-
-# Start the chat
-interpreter.chat()
+if __name__ == "__main__":
+    main()

@@ -1,17 +1,26 @@
 # Open Cowork
 
-An open-source alternative to Claude Cowork, powered by Open Interpreter (assuming 'OpenCode' refers to similar open-source code interpreters).
+An open-source alternative to Claude Cowork, powered by Open Interpreter.
 
-This is a simple CLI tool that allows an AI agent to perform tasks in a specified folder using Open Interpreter.
+## Setup
 
-## Installation
+1. Install Ollama: https://ollama.com
 
-1. Install Open Interpreter: `pip install open-interpreter`
-2. Install Ollama and pull a model, e.g., `ollama pull llama3`
-3. Run Ollama server: `ollama serve`
+2. Run `ollama run llama3`
 
-## Usage
+3. pip install -r requirements.txt
 
-python main.py /path/to/your/folder
+4. python main.py /path/to/your/workspace
 
-Then, interact with the chat to describe tasks. The agent can run code, edit files, etc., in the folder.
+5. Chat with the agent to perform tasks in the workspace.
+
+## Features
+
+- Workspace scoping: All operations are performed within the specified folder.
+
+- Permission handling: Prompts user before executing code or system commands.
+
+- Live interaction: Real-time chat with the AI agent.
+
+- Extensible: Uses Open Interpreter, which supports plugins and custom skills.
+
