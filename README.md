@@ -33,3 +33,7 @@ An open-source alternative to Claude Cowork, powered by Open Interpreter.
 - Parallel Processing: Claude can coordinate multiple "sub-agents" to work on different parts of a complex task simultaneously.
 
 
+
+### ✨ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ishandutta2007/open-cowork&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/open-cowork&type=date&legend=top-left)
