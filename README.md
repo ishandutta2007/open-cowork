@@ -1,39 +1,111 @@
-# Open Cowork
+<p align="center">
+  <img src="banner.svg" alt="Open Cowork Banner" width="800">
+</p>
 
-An open-source alternative to Claude Cowork, powered by Open Interpreter.
+<h1 align="center">🚀 Open Cowork</h1>
 
-## Setup
+<p align="center">
+  <strong>The open-source, private, and powerful alternative to Claude Cowork.</strong>
+</p>
 
-1. Install Ollama: https://ollama.com
+<p align="center">
+  <img src="https://img.shields.io/github/stars/ishandutta2007/open-cowork?style=for-the-badge&logo=github" alt="Stars">
+  <img src="https://img.shields.io/github/forks/ishandutta2007/open-cowork?style=for-the-badge&logo=github" alt="Forks">
+  <img src="https://img.shields.io/github/license/ishandutta2007/open-cowork?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/Powered%20By-Open%20Interpreter-orange?style=for-the-badge" alt="Open Interpreter">
+</p>
 
-2. Run `ollama run llama3`
+---
 
-3. pip install -r requirements.txt
+## 📑 Table of Contents
 
-4. python main.py /path/to/your/workspace
+- [🌟 Overview](#-overview)
+- [🛠️ Key Features](#️-key-features)
+- [🚀 Quick Start](#-quick-start)
+- [🤖 How It Works](#-how-it-works)
+- [📈 Star History](#-star-history)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
-5. Chat with the agent to perform tasks in the workspace.
+---
 
-## Features
+## 🌟 Overview
 
-- Workspace scoping: All operations are performed within the specified folder.
+**Open Cowork** is an autonomous AI agent designed to live in your workspace. Inspired by Claude Cowork, it leverages **Open Interpreter** and **Ollama** to provide a fully local, private, and extensible AI assistant that can read, write, and execute code within a scoped directory.
 
-- Permission handling: Prompts user before executing code or system commands.
+Whether you need to organize files, generate reports, or automate repetitive tasks, Open Cowork handles the heavy lifting while you maintain full control.
 
-- Live interaction: Real-time chat with the AI agent.
+## 🛠️ Key Features
 
-- Extensible: Uses Open Interpreter, which supports plugins and custom skills.
+- 📂 **Workspace Scoping**: Securely operates within a designated folder.
+- 🛡️ **Safety First**: Explicit permission prompts before any code execution.
+- 🤖 **Local LLM Support**: Runs locally via Ollama (llama3) for maximum privacy.
+- ⚡ **Autonomous Execution**: Breaks down complex goals into actionable subtasks.
+- 📊 **Professional Deliverables**: Generate spreadsheets, presentations, and reports.
+- 🧩 **Highly Extensible**: Built on Open Interpreter, allowing for custom skills and plugins.
 
+## 🚀 Quick Start
 
-- Direct File Access: Users designate a specific local folder on their Mac. Claude can read, create, edit, rename, and organize files within that folder autonomously.
-- Autonomous Task Execution: Unlike standard chat, Cowork acts on high-level goals (e.g., "organize these downloads by project"). It creates a plan, breaks it into subtasks, and executes them without constant human prompting.
-- Professional Outputs: Claude can generate polished deliverables, including Excel spreadsheets with working formulas, PowerPoint presentations, and formatted reports from scattered notes or images.
-- Web-Based Tasks: When paired with the "Claude in Chrome" extension, Cowork can navigate websites, gather information, and perform web-based actions like checking emails or updating dashboards.
-- Third-Party Connectors: It integrates with external tools like Notion, Asana, GitHub, Slack, and Salesforce to pull or push data.
-- Parallel Processing: Claude can coordinate multiple "sub-agents" to work on different parts of a complex task simultaneously.
+### 1. Prerequisites
+Ensure you have [Ollama](https://ollama.com) installed and running.
 
+```bash
+# Pull the latest llama3 model
+ollama run llama3
+```
 
+### 2. Installation
+Clone the repository and install dependencies:
 
-### ✨ Star History
+```bash
+git clone https://github.com/ishandutta2007/open-cowork.git
+cd open-cowork
+pip install -r requirements.txt
+```
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ishandutta2007/open-cowork&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/open-cowork&type=date&legend=top-left)
+### 3. Usage
+Start the agent by pointing it to your workspace folder:
+
+```bash
+python main.py /path/to/your/workspace
+```
+
+---
+
+## 🤖 How It Works
+
+<p align="center">
+  <img src="demo.svg" alt="Open Cowork Demo" width="600">
+</p>
+
+Open Cowork acts as a bridge between your local file system and a Large Language Model. 
+
+1. **Initialization**: You specify a workspace.
+2. **Goal Setting**: You provide a high-level task (e.g., "Clean up my downloads and sort by file type").
+3. **Planning**: The AI generates a multi-step plan.
+4. **Execution**: The agent executes Python/Shell commands to achieve the goal, asking for your approval at each step.
+
+---
+
+## 📈 Star History
+
+<p align="center">
+  <a href="https://star-history.com/#ishandutta2007/open-cowork&Date">
+    <img src="https://api.star-history.com/svg?repos=ishandutta2007/open-cowork&type=Date" alt="Star History Chart" width="100%">
+  </a>
+</p>
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">
+  Built with ❤️ for the open-source community.
+</p>
