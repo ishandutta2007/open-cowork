@@ -14,6 +14,9 @@
   <img src="https://img.shields.io/github/license/ishandutta2007/open-cowork?style=for-the-badge" alt="License">
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python" alt="Python">
   <img src="https://img.shields.io/badge/Powered%20By-Open%20Interpreter-orange?style=for-the-badge" alt="Open Interpreter">
+  <a href="https://github.com/ishandutta2007">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow&style=for-the-badge&logo=github&logoColor=white" alt="Github"/>
+  </a>
 </p>
 
 ---
